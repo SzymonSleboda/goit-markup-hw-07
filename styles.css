@@ -8,10 +8,29 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+.service {
+  padding-bottom: 94px;
+  width: 1200px;
+  margin: 0 auto;
+}
 .header__container {
   width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
+}
+.promo {
+  width: 1200px;
+  margin: 0 auto;
+}
+.promo__item {
+  list-style: none;
+  display: flex;
+  margin: inherit;
+  align-items: center;
+  padding-left: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  justify-content: center;
 }
 .paddinglr {
   display: flex;
@@ -241,7 +260,7 @@ body {
 .header__mail:focus {
   color: #2196f3;
 }
-.mainmsg {
+.main-section__message {
   font-family: inherit;
   font-size: 44px;
   font-weight: 900;
@@ -256,7 +275,7 @@ body {
   background: none;
 }
 
-.button-order-service {
+.main-section__button {
   color: #ffffff;
   background-color: #2196f3;
   text-align: center;
@@ -281,6 +300,23 @@ body {
 }
 .mainsec {
   background-color: #2f303a;
+}
+.main-section {
+  background-color: #2f303a;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(255, 255, 255, 0)
+    ),
+    url("./images/imag.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 .web3 {
   font-family: "Raleway";
@@ -323,7 +359,7 @@ body {
 .mail2:focus {
   color: #2196f3;
 }
-.semihead {
+.promo__header {
   font-family: inherit;
   font-size: 14px;
   font-weight: 700;
@@ -335,7 +371,7 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.text {
+.promo__text {
   font-family: inherit;
   font-size: 14px;
   font-weight: 400;
@@ -482,6 +518,9 @@ body {
 .textbox {
   margin-right: 30px;
 }
+.promo__textbox {
+  margin-right: 30px;
+}
 .imgbox {
   position: relative;
   display: flex;
@@ -600,6 +639,14 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.main-section__container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+}
 .header {
   height: 80px;
   display: flex;
@@ -611,7 +658,7 @@ body {
 .footer {
   height: 252px;
 }
-.sprite {
+.promo__icon-box {
   height: 120px;
   width: 270px;
   margin-bottom: 30px;
@@ -806,7 +853,7 @@ svg {
   justify-content: center;
   display: flex;
 }
-.mid_icon {
+.promo__icon {
   width: 70px;
   height: 70px;
 }
