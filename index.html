@@ -458,57 +458,62 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <div class="formcont">
-          <h2 class="formtitle">Zostaw swoje dane w formularzu poniżej</h2>
-          <form class="my_form" name="signup_form" autocomplete="on" novalidate>
-            <fieldset class="fieldset">
+      <div class="backdrop__modal">
+        <div class="backdrop__form-container">
+          <h2 class="backdrop__formtitle">
+            Zostaw swoje dane w formularzu poniżej
+          </h2>
+          <form
+            class="backdrop__form"
+            name="signup_form"
+            autocomplete="on"
+            novalidate
+          >
+            <fieldset class="backdrop__fieldset">
               <label for="Name"> Imię </label>
-              <svg class="modalicon">
+              <svg class="backdrop__icon">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
               <input type="text" id="Name" />
             </fieldset>
 
-            <fieldset class="fieldset">
+            <fieldset class="backdrop__fieldset">
               <label for="Telefon"> Telefon </label>
-              <svg class="modalicon">
+              <svg class="backdrop__icon">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
               <input type="tel" id="Telefon" />
             </fieldset>
 
-            <fieldset class="fieldset">
+            <fieldset class="backdrop__fieldset">
               <label for="Email"> Imię </label>
-              <svg class="modalicon">
+              <svg class="backdrop__icon">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
               <input type="email" id="Email" />
             </fieldset>
-            <div class="comment">Komentarz</div>
+            <div class="backdrop__comment">Komentarz</div>
             <textarea placeholder="Wprowadź tekst"></textarea>
 
-            <fieldset class="fieldsetsec">
-              <input class="checkbox" type="checkbox" />
-              <div class="rectangle">
-                <svg class="check">
+            <fieldset class="backdrop__fieldset-checkbox">
+              <input class="backdrop__checkbox" type="checkbox" />
+              <div class="backdrop__checkbox-border">
+                <svg class="backdrop__checkbox-check">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </div>
-              <div class="policy">
+              <div class="backdrop__policy">
                 Oświadczam iż akceptuję
-                <span class="policysec">Regulamin</span> i
-                <span class="policysec">Politykę Prywatności.</span>
+                <span class="backdrop__policy-link">Regulamin</span> i
+                <span class="backdrop__policy-link">Politykę Prywatności.</span>
               </div>
             </fieldset>
 
-            <button type="submit" class="button-order-service_sec margtop">
-              Wyślij
-            </button>
+            <button type="submit" class="backdrop__button">Wyślij</button>
           </form>
         </div>
-        <div class="close_background" data-modal-close>
-          <svg class="close-btn" data-modal-close>
+        <div class="backdrop__background-close" data-modal-close>
+          <svg class="backdrop__close-button" data-modal-close>
             <use href="./images/icons.svg#icon-vectorx"></use>
           </svg>
         </div>

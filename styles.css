@@ -8,6 +8,12 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+.portfolio {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .service {
   padding-bottom: 94px;
   width: 1200px;
@@ -572,22 +578,73 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:hover {
+.portfolio__button:hover,
+.portfolio__button-last:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.button:focus {
+.portfolio__button:focus,
+.portfolio__button-last:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .buttonspaces {
   margin-right: 8px;
 }
-.button:hover {
+.portfolio__buttons-container {
+  padding-left: 295px;
+  list-style: none;
+  display: flex;
+  margin: inherit;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.portfolio__button {
+  margin-right: 8px;
+  height: 38px;
+  width: 114px;
+  left: 740px;
+  top: 174px;
+  background-color: #f5f4fa;
+  color: inherit;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__button-last {
+  height: 38px;
+  width: 114px;
+  left: 740px;
+  top: 174px;
+  background-color: #f5f4fa;
+  color: inherit;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__button:hover,
+.portfolio__button-last:hover {
   color: #ffffff;
   background-color: #2196f3;
 }
-.button:focus {
+.portfolio__button:focus,
+.portfolio__button-last:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -744,6 +801,14 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+.portfolio__item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
 .box2 {
   background-color: #ffffff;
   text-align: center;
@@ -752,13 +817,18 @@ body {
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
+.portfolio__captionbox {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  margin: 0;
+}
 .figcappadding {
   padding-top: 20px;
 }
 .sectionbot {
   padding-bottom: 50px;
 }
-.item {
+.portfolio__item {
   flex-basis: calc((100% - 60px) / 3);
   transition-property: box-shadow;
   transition: box-shadow 250ms ease;
@@ -766,10 +836,10 @@ body {
   position: relative;
   overflow: hidden;
 }
-.item:hover {
+.portfolio__item:hover {
   box-shadow: 1px 4px 6px 0px #00000029;
 }
-.imgwid {
+.overlay__image-width {
   width: 100%;
 }
 .width {
@@ -1075,7 +1145,12 @@ svg {
   justify-content: center;
   padding: 49px 45px 49px 24px;
 }
-
+.portfolio_overlay-box {
+  position: relative;
+  overflow: hidden;
+  height: 294px;
+  cursor: pointer;
+}
 .overlay_box {
   position: relative;
   overflow: hidden;
@@ -1121,6 +1196,13 @@ svg {
   background-color: #ffffff;
   cursor: pointer;
 }
+.backdrop__close-button {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
 .backdrop {
   position: fixed;
   left: 0;
@@ -1135,7 +1217,7 @@ svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal {
+.backdrop__modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1149,6 +1231,7 @@ svg {
   overflow: hidden;
   padding: 40px 40px 40px 40px;
 }
+
 .header__navposition--selected:hover,
 .header__navposition--selected:focus {
   cursor: pointer;
@@ -1252,10 +1335,10 @@ svg {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.formcont {
+.backdrop__form-container {
   width: 448px;
 }
-.formtitle {
+.backdrop__formtitle {
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
@@ -1277,12 +1360,24 @@ svg {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-block: 28px;
 }
-.my_form .modalicon {
+.backdrop__fieldset {
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-block: 28px;
+}
+.backdrop__form .backdrop__icon {
   height: 18px;
   width: 18px;
 }
 
-.my_form label {
+.backdrop__form label {
   position: absolute;
   font-family: inherit;
   font-size: 12px;
@@ -1298,18 +1393,23 @@ svg {
   top: 11px;
   left: 12px;
 }
-.my_form input {
+.backdrop__icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+.backdrop__form input {
   margin-left: 42px;
   width: 100%;
   border: none;
 }
-.my_form input:focus {
+.backdrop__form input:focus {
   outline: 0;
 }
-.fieldset:focus-within {
+.backdrop__fieldset:focus-within {
   border-color: #2196f3;
 }
-.fieldset:focus-within svg {
+.backdrop__fieldset:focus-within svg {
   border-color: #2196f3;
   fill: #2196f3;
 }
@@ -1327,6 +1427,16 @@ textarea {
   margin-top: 30px;
 }
 .comment {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #757575;
+  padding-bottom: 4px;
+}
+.backdrop__comment {
   font-family: inherit;
   font-size: 12px;
   font-weight: 400;
@@ -1354,7 +1464,27 @@ textarea::placeholder {
   width: 11px;
   fill: white;
 }
+.backdrop__checkbox-check {
+  height: 8px;
+  width: 11px;
+  fill: white;
+}
 .rectangle {
+  position: absolute;
+  background: white;
+  border: 2px solid black;
+  border-radius: 2px;
+  height: 15px;
+  width: 16px;
+  top: 4.5px;
+  left: 15px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backdrop__checkbox-border {
   position: absolute;
   background: white;
   border: 2px solid black;
@@ -1383,7 +1513,20 @@ textarea::placeholder {
   margin-bottom: 30px;
   margin-left: 0;
 }
-
+.backdrop__fieldset-checkbox {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  padding: 0;
+  width: 419px;
+  height: 24px;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 30px;
+  margin-left: 0;
+}
 .checkbox {
   position: absolute;
   background: white;
@@ -1395,12 +1538,34 @@ textarea::placeholder {
   z-index: 2;
   opacity: 0;
 }
-.fieldsetsec .checkbox {
+.backdrop__checkbox {
+  position: absolute;
+  background: white;
+  border: 2px solid black;
+  border-radius: 2px;
+  height: 15px;
+  width: 16px;
+  top: 4.5px;
+  z-index: 2;
+  opacity: 0;
+}
+.backdrop__fieldset-checkbox .backdrop__checkbox {
   width: 16px;
   margin: 0;
   left: 15px;
 }
 .policy {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
+  margin-left: 40px;
+  width: 397px;
+}
+.backdrop__policy {
   font-family: inherit;
   font-size: 14px;
   font-weight: 400;
@@ -1421,7 +1586,17 @@ textarea::placeholder {
   color: #2196f3;
   text-decoration: underline;
 }
-.checkbox:checked + .rectangle {
+.backdrop__policy-link {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #2196f3;
+  text-decoration: underline;
+}
+.backdrop__checkbox:checked + .backdrop__checkbox-border {
   background-color: #2196f3;
   border: none;
 }
@@ -1513,6 +1688,28 @@ textarea::placeholder {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.backdrop__button {
+  color: #ffffff;
+  background-color: #2196f3;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 0;
+  display: block;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+}
 .footer__button {
   color: #ffffff;
   background-color: #2196f3;
@@ -1561,6 +1758,20 @@ textarea::placeholder {
   justify-content: center;
 }
 .close_background {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px #0000001a;
+  background-color: white;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backdrop__background-close {
   width: 30px;
   height: 30px;
   border-radius: 50%;
