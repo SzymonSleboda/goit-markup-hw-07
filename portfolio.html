@@ -18,44 +18,49 @@
     />
   </head>
   <body>
-    <header class="borderbot height stylethird">
-      <section class="container just">
-        <div class="navbar">
-          <div class="flex">
-            <a class="nodec webstudio" href="./index.html">
-              <span class="web1">Web</span><span class="web2">Studio</span></a
+    <header class="header">
+      <section class="header__container">
+        <div class="header__navigation">
+          <div class="header__menu">
+            <a class="header__mainlogo" href="./index.html">
+              <span class="header__logo--primary">Web</span
+              ><span class="header__logo--secondary">Studio</span></a
             >
             <nav>
-              <ul class="ulnodec flex nopaddingleft col">
+              <ul class="header__navigationlist">
                 <li>
-                  <a class="mainnav nodec distance" href="./index.html"
-                    >Agencja</a
-                  >
+                  <a class="header__navposition" href="./index.html">Agencja</a>
                 </li>
                 <li>
                   <a
-                    class="mainnav nodec distance header-portfolio"
+                    class="header__navposition header__navposition--selected"
                     href="./portfolio.html"
                     >Portfolio</a
                   >
                 </li>
-                <li><a class="mainnav nodec" href="#">Kontakty</a></li>
+                <li>
+                  <a
+                    class="header__navposition header__navposition--last"
+                    href="#"
+                    >Kontakty</a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
-          <div class="flex">
-            <ul class="ulnodec flex nopaddingleft nomargin">
+          <div class="header__contacts">
+            <ul class="header__contactlist">
               <li>
-                <a class="mail nodec disflex" href="mailto:info@devstudio.com">
-                  <svg class="navicon">
+                <a class="header__mail" href="mailto:info@devstudio.com">
+                  <svg class="header__mailicon">
                     <use href="./images/icons.svg#icon-envelope"></use>
                   </svg>
                   info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="number nodec disflex" href="tel:+48111111111">
-                  <svg class="naviconsec">
+                <a class="header__number" href="tel:+48111111111">
+                  <svg class="header__telephoneicon">
                     <use href="./images/icons.svg#icon-smartphone "></use>
                   </svg>
                   +48 111 111 111</a
