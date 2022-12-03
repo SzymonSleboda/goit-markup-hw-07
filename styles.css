@@ -1222,6 +1222,7 @@ textarea::placeholder {
   margin-left: 16px;
   padding: 0px;
   box-sizing: border-box;
+  color: white;
 }
 .footer__fieldset:has(.footer__input:focus) {
   border-color: #2196f3;
