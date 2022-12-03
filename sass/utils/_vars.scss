@@ -1,5 +1,5 @@
 :root {
-  --color-secondary: var(--color-secondary);
+  --color-secondary: #2196f3;
   --color-primary: #757575;
   --background-dark: #2f303a;
 }
@@ -35,4 +35,29 @@ textarea::placeholder {
   line-height: 1.17;
   letter-spacing: 0.01em;
   text-align: left;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(0%) translateY(6%) scale(0) skewX(40deg);
+  transition-duration: 250ms;
+}
+.close_background {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px #0000001a;
+  background-color: white;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }

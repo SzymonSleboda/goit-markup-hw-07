@@ -1,0 +1,232 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity, visibility, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__close-button {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.backdrop__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 40px 40px 40px 40px;
+}
+
+.backdrop__form-container {
+  width: 448px;
+}
+.backdrop__formtitle {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 2px;
+}
+
+.backdrop__fieldset {
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-block: 28px;
+}
+.backdrop__form .backdrop__icon {
+  height: 18px;
+  width: 18px;
+}
+
+.backdrop__form label {
+  position: absolute;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--color-primary);
+  top: -18px;
+}
+
+.backdrop__icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+.backdrop__form input {
+  margin-left: 42px;
+  width: 100%;
+  border: none;
+}
+.backdrop__form input:focus {
+  outline: 0;
+}
+.backdrop__fieldset:focus-within {
+  border-color: var(--color-secondary);
+}
+.backdrop__fieldset:focus-within svg {
+  border-color: var(--color-secondary);
+  fill: var(--color-secondary);
+}
+
+.backdrop__comment {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--color-primary);
+  padding-bottom: 4px;
+}
+
+.backdrop__checkbox-check {
+  height: 8px;
+  width: 11px;
+  fill: white;
+}
+
+.backdrop__checkbox-border {
+  position: absolute;
+  background: white;
+  border: 2px solid black;
+  border-radius: 2px;
+  height: 15px;
+  width: 16px;
+  top: 4.5px;
+  left: 15px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop__fieldset-checkbox {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  padding: 0;
+  width: 419px;
+  height: 24px;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+
+.backdrop__checkbox {
+  position: absolute;
+  background: white;
+  border: 2px solid black;
+  border-radius: 2px;
+  height: 15px;
+  width: 16px;
+  top: 4.5px;
+  z-index: 2;
+  opacity: 0;
+}
+.backdrop__fieldset-checkbox .backdrop__checkbox {
+  width: 16px;
+  margin: 0;
+  left: 15px;
+}
+
+.backdrop__policy {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--color-primary);
+  margin-left: 40px;
+  width: 397px;
+}
+
+.backdrop__policy-link {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+.backdrop__checkbox:checked + .backdrop__checkbox-border {
+  background-color: var(--color-secondary);
+  border: none;
+}
+
+.backdrop__button {
+  color: #ffffff;
+  background-color: var(--color-secondary);
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.backdrop__background-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px #0000001a;
+  background-color: white;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

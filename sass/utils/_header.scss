@@ -1,0 +1,200 @@
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid;
+  color: #ececec;
+}
+.header__container {
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.header__mainlogo {
+  margin-right: 93px;
+  text-decoration: none;
+  list-style: none;
+}
+.header__logo--primary {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--color-secondary);
+}
+.header__logo--secondary {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #000000;
+}
+
+.header__navigationlist {
+  display: flex;
+  margin: inherit;
+  align-items: center;
+  color: #212121;
+  padding-left: 0px;
+  list-style: none;
+}
+.header__menu {
+  display: flex;
+  margin: inherit;
+  align-items: center;
+}
+.header__contacts {
+  display: flex;
+  margin: inherit;
+  align-items: center;
+}
+.header__mail {
+  font-family: inherit;
+  text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-style: normal;
+  margin-right: 50px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+
+  color: var(--color-primary);
+}
+.header__contactlist {
+  margin: 0px;
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  margin: inherit;
+  align-items: center;
+}
+.header__navposition {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: inherit;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  list-style: none;
+  margin-right: 46px;
+}
+.header__position--last {
+  text-decoration: none;
+  list-style: none;
+}
+
+.header__number {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-style: normal;
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+
+  color: var(--color-primary);
+}
+.header__number:hover svg,
+.header__number:focus svg {
+  fill: var(--color-secondary);
+}
+.header__number:hover {
+  color: var(--color-secondary);
+}
+.header__mail:hover {
+  color: var(--color-secondary);
+}
+.header__number:focus {
+  color: var(--color-secondary);
+}
+.header__mail:focus {
+  color: var(--color-secondary);
+}
+.header__mailicon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--color-primary);
+}
+
+.header__telephoneicon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--color-primary);
+}
+
+.header__mail:hover svg,
+.header__mail:focus svg {
+  fill: var(--color-secondary);
+}
+.header__navigation {
+  display: flex;
+  margin: none;
+  justify-content: space-between;
+}
+.header__navposition--selected:hover,
+.header__navposition--selected:focus {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+.header__navposition:hover,
+.header__navposition:focus {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+.header__navposition--last:hover,
+.header__navposition--last:focus {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+.header__navposition--selected::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  background-color: var(--color-secondary);
+  width: 100%;
+  border-radius: 2px;
+  bottom: -33px;
+  left: 0px;
+}
+
+.header__navposition--selected {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  text-align: left;
+  color: inherit;
+}

@@ -1,0 +1,62 @@
+.main-section {
+  background-color: var(--background-dark);
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(255, 255, 255, 0)
+    ),
+    url("../images/imag.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.main-section__container {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-section__message {
+  font-family: inherit;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  width: 696px;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--background-dark);
+  margin: inherit;
+  padding-bottom: 30px;
+  background: none;
+}
+.main-section__button {
+  color: #ffffff;
+  background-color: var(--color-secondary);
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

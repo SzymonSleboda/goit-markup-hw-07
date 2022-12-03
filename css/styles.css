@@ -799,6 +799,9 @@ textarea::placeholder {
   height: 294px;
   cursor: pointer;
 }
+.portfolio__overlay-width {
+  width: 100%;
+}
 
 /* FOOTER */
 
@@ -903,10 +906,6 @@ textarea::placeholder {
 }
 .footer__number-list {
   padding-bottom: 9px;
-}
-
-.overlay__image-width {
-  width: 100%;
 }
 
 .footer__icons-title {
