@@ -25,7 +25,7 @@ textarea {
   border-radius: 4px;
 }
 textarea:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--color-secondary);
   outline: 0;
 }
 textarea::placeholder {
@@ -88,7 +88,7 @@ textarea::placeholder {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .header__logo--secondary {
   font-family: "Raleway";
@@ -136,7 +136,7 @@ textarea::placeholder {
   align-items: center;
   justify-items: center;
 
-  color: #757575;
+  color: var(--color-primary);
 }
 .header__contactlist {
   margin: 0px;
@@ -182,41 +182,41 @@ textarea::placeholder {
   align-items: center;
   justify-items: center;
 
-  color: #757575;
+  color: var(--color-primary);
 }
 .header__number:hover svg,
 .header__number:focus svg {
-  fill: #2196f3;
+  fill: var(--color-secondary);
 }
 .header__number:hover {
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .header__mail:hover {
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .header__number:focus {
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .header__mail:focus {
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .header__mailicon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: #757575;
+  fill: var(--color-primary);
 }
 
 .header__telephoneicon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: #757575;
+  fill: var(--color-primary);
 }
 
 .header__mail:hover svg,
 .header__mail:focus svg {
-  fill: #2196f3;
+  fill: var(--color-secondary);
 }
 .header__navigation {
   display: flex;
@@ -226,23 +226,23 @@ textarea::placeholder {
 .header__navposition--selected:hover,
 .header__navposition--selected:focus {
   cursor: pointer;
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .header__navposition:hover,
 .header__navposition:focus {
   cursor: pointer;
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .header__navposition--last:hover,
 .header__navposition--last:focus {
   cursor: pointer;
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .header__navposition--selected::after {
   position: absolute;
   content: "";
   height: 4px;
-  background-color: #2196f3;
+  background-color: var(--color-secondary);
   width: 100%;
   border-radius: 2px;
   bottom: -33px;
@@ -268,7 +268,7 @@ textarea::placeholder {
 /* MAIN-SECTION */
 
 .main-section {
-  background-color: #2f303a;
+  background-color: var(--background-dark);
   text-decoration: none;
   list-style: none;
   justify-content: center;
@@ -301,14 +301,14 @@ textarea::placeholder {
   width: 696px;
   text-align: center;
   color: #ffffff;
-  background-color: #2f303a;
+  background-color: var(--background-dark);
   margin: inherit;
   padding-bottom: 30px;
   background: none;
 }
 .main-section__button {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--color-secondary);
   text-align: center;
   height: 50px;
   width: 200px;
@@ -364,7 +364,7 @@ textarea::placeholder {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #757575;
+  color: var(--color-primary);
   text-align: justify;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -529,7 +529,7 @@ textarea::placeholder {
   font-weight: 400;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--color-primary);
   margin: 0px;
   padding-top: 10px;
   padding-bottom: 16px;
@@ -556,7 +556,7 @@ textarea::placeholder {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .staff__icon-background:hover {
-  background-color: #2196f3;
+  background-color: var(--color-secondary);
   cursor: pointer;
 }
 .staff__icon-background:hover svg {
@@ -626,7 +626,7 @@ textarea::placeholder {
 }
 .clients__item:hover,
 .clients__item:focus {
-  outline: 2px solid #2196f3;
+  outline: 2px solid var(--color-secondary);
 }
 .clients__icon {
   width: 106px;
@@ -639,7 +639,7 @@ textarea::placeholder {
 }
 
 .clients__item:hover svg {
-  fill: #2196f3;
+  fill: var(--color-secondary);
 }
 
 /* PORTFOLIO */
@@ -711,12 +711,12 @@ textarea::placeholder {
 .portfolio__button:hover,
 .portfolio__button-last:hover {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--color-secondary);
 }
 .portfolio__button:focus,
 .portfolio__button-last:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--color-secondary);
 }
 
 .portfolio__text-arrangement {
@@ -729,7 +729,7 @@ textarea::placeholder {
   line-height: 1.87;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #757575;
+  color: var(--color-primary);
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -804,7 +804,7 @@ textarea::placeholder {
 
 .footer {
   height: 252px;
-  background-color: #2f303a;
+  background-color: var(--background-dark);
 }
 .footer__contacts {
   padding-left: 0px;
@@ -819,7 +819,7 @@ textarea::placeholder {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #2196f3;
+  color: var(--color-secondary);
   text-decoration: none;
   list-style: none;
 }
@@ -876,16 +876,16 @@ textarea::placeholder {
   list-style: none;
 }
 .footer__number:hover {
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .footer__mail:hover {
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .footer__number:focus {
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 .footer__mail:focus {
-  color: #2196f3;
+  color: var(--color-secondary);
 }
 
 .footer__bottomlogo-decoration {
@@ -971,7 +971,7 @@ textarea::placeholder {
 }
 
 .footer__icon-background:hover {
-  background-color: #2196f3;
+  background-color: var(--color-secondary);
   cursor: pointer;
 }
 .footer__icon-background:hover svg {
@@ -1004,7 +1004,7 @@ textarea::placeholder {
   color: white;
 }
 .footer__fieldset:has(.footer__input:focus) {
-  border-color: #2196f3;
+  border-color: var(--color-secondary);
 }
 .footer__input-container {
   display: flex;
@@ -1024,7 +1024,7 @@ textarea::placeholder {
 }
 .footer__button {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--color-secondary);
   text-align: center;
   height: 50px;
   width: 200px;
@@ -1138,7 +1138,7 @@ textarea::placeholder {
   line-height: 1.17;
   letter-spacing: 0.01em;
   text-align: left;
-  color: #757575;
+  color: var(--color-primary);
   top: -18px;
 }
 
@@ -1156,11 +1156,11 @@ textarea::placeholder {
   outline: 0;
 }
 .backdrop__fieldset:focus-within {
-  border-color: #2196f3;
+  border-color: var(--color-secondary);
 }
 .backdrop__fieldset:focus-within svg {
-  border-color: #2196f3;
-  fill: #2196f3;
+  border-color: var(--color-secondary);
+  fill: var(--color-secondary);
 }
 
 .backdrop__comment {
@@ -1170,7 +1170,7 @@ textarea::placeholder {
   line-height: 1.17;
   letter-spacing: 0.01em;
   text-align: left;
-  color: #757575;
+  color: var(--color-primary);
   padding-bottom: 4px;
 }
 
@@ -1235,7 +1235,7 @@ textarea::placeholder {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #757575;
+  color: var(--color-primary);
   margin-left: 40px;
   width: 397px;
 }
@@ -1247,17 +1247,17 @@ textarea::placeholder {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #2196f3;
+  color: var(--color-secondary);
   text-decoration: underline;
 }
 .backdrop__checkbox:checked + .backdrop__checkbox-border {
-  background-color: #2196f3;
+  background-color: var(--color-secondary);
   border: none;
 }
 
 .backdrop__button {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--color-secondary);
   text-align: center;
   height: 50px;
   width: 200px;

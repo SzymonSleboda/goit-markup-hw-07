@@ -1,5 +1,5 @@
 :root {
-  --color-secondary: #2196f3;
+  --color-secondary: var(--color-secondary);
   --color-primary: #757575;
   --background-dark: #2f303a;
 }
@@ -24,7 +24,7 @@ textarea {
   border-radius: 4px;
 }
 textarea:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--color-secondary);
   outline: 0;
 }
 textarea::placeholder {
