@@ -62,6 +62,15 @@ textarea::placeholder {
   width: 1200px;
   margin: 0 auto;
 }
+.section {
+  padding: 94px 0;
+}
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+.no-padding-top {
+  padding-top: 0;
+}
 /* HEADER */
 .header {
   height: 80px;
@@ -72,8 +81,6 @@ textarea::placeholder {
   color: #ececec;
 }
 .header__container {
-  width: 1200px;
-  margin: 0 auto;
   justify-content: space-between;
 }
 .header__mainlogo {
@@ -289,8 +296,6 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 1200px;
-  margin: 0 auto;
 }
 .main-section__message {
   font-family: inherit;
@@ -332,8 +337,7 @@ textarea::placeholder {
 /* PROMO */
 
 .promo {
-  width: 1200px;
-  margin: 0 auto;
+  padding-bottom: 94px;
 }
 .promo__item {
   list-style: none;
@@ -341,8 +345,6 @@ textarea::placeholder {
   margin: inherit;
   align-items: center;
   padding-left: 0;
-  padding-top: 94px;
-  padding-bottom: 94px;
   justify-content: center;
 }
 .promo__header {
@@ -391,8 +393,6 @@ textarea::placeholder {
 
 .service {
   padding-bottom: 94px;
-  width: 1200px;
-  margin: 0 auto;
 }
 .service__list {
   list-style: none;
@@ -465,7 +465,6 @@ textarea::placeholder {
 /* STAFF */
 
 .staff {
-  padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
@@ -583,10 +582,7 @@ textarea::placeholder {
 /* CLIENTS */
 
 .clients {
-  padding-top: 94px;
   padding-bottom: 94px;
-  width: 1200px;
-  margin: 0 auto;
 }
 .clients__list {
   list-style: none;
@@ -645,9 +641,6 @@ textarea::placeholder {
 /* PORTFOLIO */
 
 .portfolio {
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .portfolio__button:hover,
@@ -937,8 +930,6 @@ textarea::placeholder {
 .footer__container {
   display: flex;
   justify-content: center;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .footer__icon-container {
